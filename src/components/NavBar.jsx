@@ -29,9 +29,9 @@ const NavBar = () => {
   ];
 
   return (
-    <div className="bg-white fixed">
-      <div className="flex h-20 w-screen px-4 my-4 text-black">
-      <div className="flex flex-inline w-screen justify-between border-2 border-black">
+    <div className="bg-white">
+      <div className="flex h-20 w-screen mt-4 text-black">
+      <div className="flex flex-inline w-screen justify-between border-2 border-black mx-4">
         <div className="border-r-2 border-black p-2">
           <h1 className="text-2xl font-bold">maria zamora</h1>
         </div>
