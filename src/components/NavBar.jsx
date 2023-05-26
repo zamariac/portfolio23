@@ -29,51 +29,60 @@ const NavBar = () => {
   ];
 
   return (
-    <div className="flex justify-between items-center w-full h-20 px-4 text-white bg-black fixed">
-      <div>
-        <h1 className="text-5xl font-signature ml-2">Maria</h1>
-      </div>
-
-      <ul className="hidden md:flex">
-        {links.map(({ id, link }) => (
-          <li
-            key={id}
-            className="px-4 cursor-pointer capitalize font-medium text-gray-500 hover:scale-105 duration-200"
-          >
-            <Link to={link} smooth duration={500}>
-              {link}
-            </Link>
-          </li>
-        ))}
-      </ul>
-
-      <div
+    <div className="bg-white fixed">
+      <div className="flex h-20 w-screen px-4 my-4 text-black">
+      <div className="flex flex-inline w-screen justify-between border-2 border-black">
+        <div className="border-r-2 border-black p-2">
+          <h1 className="text-2xl font-bold">maria zamora</h1>
+        </div>
+        <div className="border-l-2 border-r-2 border-black p-4 w-full mx-2"></div>
+        <div className="border-l-2 border-black py-5">
+          <ul className="hidden md:flex">
+            {links.map(({ id, link }) => (
+              <li
+                key={id}
+                className="px-4 cursor-pointer capitalize font-bold text-black-800 text-2xl hover:scale-105 duration-200"
+              >
+                <Link to={link} smooth duration={500}>
+                  {link}
+                </Link>
+              </li>
+            ))}
+          </ul>
+          </div>
+          <div
         onClick={() => setNav(!nav)}
-        className="cursor-pointer pr-4 z-10 text-gray-500 md:hidden"
+        className="cursor-pointer p-6 z-10 text-black-500 md:hidden"
       >
-        {nav ? <FaTimes size={30} /> : <FaBars size={30} />}
+        {nav ? <FaTimes size={30} /> : <FaBars size={25} />}
       </div>
 
       {nav && (
-        <ul className="flex flex-col justify-center items-center absolute top-0 left-0 w-full h-screen bg-gradient-to-b from-black to-gray-800 text-gray-500">
-          {links.map(({ id, link }) => (
-            <li
-              key={id}
-              className="px-4 cursor-pointer capitalize py-6 text-4xl"
-            >
-              <Link
-                onClick={() => setNav(!nav)}
-                to={link}
-                smooth
-                duration={500}
+        <div className="border-4 border-black absolute top-0 left-0 bg-white w-screen h-screen">
+          <ul className="flex flex-col justify-center items-center big-white">
+            {links.map(({ id, link }) => (
+              
+              <li
+                key={id}
+                className="px-4 cursor-pointer capitalize py-6 text-3xl border-t-2 border-black w-screen"
               >
-                {link}
-              </Link>
-            </li>
-          ))}
-        </ul>
+                <Link
+                  onClick={() => setNav(!nav)}
+                  to={link}
+                  smooth
+                  duration={500}
+                >
+                  {link}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </div>
       )}
+      </div>
     </div>
+    </div>
+    
   );
 };
 
