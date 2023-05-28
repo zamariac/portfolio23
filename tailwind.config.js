@@ -6,7 +6,8 @@ module.exports = {
   theme: {
     extend: {},
     fontFamily: {
-      signature: ["Great Vibes"],
+      bodoni: 'Bodoni, serif',
+      montserrat: 'Montserrat, sans serif'
     }
   },
   plugins: [],

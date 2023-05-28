@@ -2,36 +2,26 @@ import React from "react";
 
 const About = () => {
   return (
-    <div
-      name="about"
-      className="w-full h-screen bg-gradient-to-b from-gray-800 to-black text-white"
-    >
-      <div className="max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full h-full">
-        <div className="pb-8">
-          <p className="text-4xl font-bold inline border-b-4 border-gray-500">
-            About
+    <div className="flex px-4"
+      name="about">
+      <div className="border-2 border-t-none border-black container md:columns-2 max-w-7xl xl:mx-auto">
+        <div className="p-8">        
+          <div className="pb-8">
+            <p className="text-4xl font-bold inline border-b-2 border-black font-bodoni">
+              About
+            </p>
+          </div>
+          <p className="font-montserrat text-lg md:pb-6">
+            I'm a front end developer with a wide range of skills and expertise. I am proficient in HTML, CSS, and JavaScript, and have knowledge of front-end frameworks like React. I have a strong understanding of responsive web design principles and mobile-first development. I have experience working with CSS preprocessors like Sass and Less, as well as CSS frameworks such as Bootstrap, Material-UI, and Tailwind CSS, which enable me to quickly develop user interfaces.
+            I work with various tools such as FIGMA, Adobe Photoshop, and Sketch. I love working with designers. I like to streamline development processes with front-end build tools like Webpack and Gulp, as well as package managers like npm and Yarn for efficient code organization and management. I am proficient in PHP development and have a strong command of WordPress features and functionalities. This expertise enables me to create dynamic and interactive websites using WordPress CMS. I am well-versed in version control systems like Git, which ensures effective collaboration and code management. I am also experienced in using project management tools like Jira, to facilitate efficient task tracking and team coordination.
+          </p>
+          <br />
+          <p className="font-montserrat text-lg">
+            Beyond my technical skills, I possess excellent problem-solving abilities, effective communication skills, and a collaborative mindset. These qualities enable me to tackle challenges, work well with others, and contribute to successful project outcomes and meeting deadlines. I am bilingual in English and Spanish, allowing me to effectively communicate and collaborate in both languages. This proficiency enhances my ability to work with diverse teams and cater to a wider range of users and clients.
+
+            When I’m not coding you can find me volunteering, practicing yoga or dancing! Let’s work together
           </p>
         </div>
-
-        <p className="text-xl mt-20">
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius,
-          deserunt illum mollitia officiis qui exercitationem perferendis neque
-          quasi a recusandae necessitatibus tempora iusto! Blanditiis error
-          iste, totam fugiat recusandae rerum laborum perferendis molestiae
-          aperiam asperiores nemo. Magni dolor maxime debitis vitae, eaque hic
-          ab mollitia voluptatibus, a nostrum eveniet laborum!
-        </p>
-
-        <br />
-
-        <p className="text-xl">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum
-          pariatur, vel similique sint, nobis aspernatur ut praesentium
-          explicabo ipsam aliquid quasi laboriosam et culpa possimus repudiandae
-          quisquam ullam maiores ab unde. Fugiat odio mollitia nemo alias.
-          Commodi facilis atque nulla vero voluptatem explicabo. Quibusdam,
-          magni quo! Eum cupiditate debitis labore.
-        </p>
       </div>
     </div>
   );

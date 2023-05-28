@@ -30,7 +30,7 @@ const NavBar = () => {
 
   return (
     <div>
-      <div className="flex h-20 mt-4 text-black">
+      <div className="flex h-20 mt-4 text-black font-bodoni font-bold">
       <div className="flex flex-inline w-screen max-w-7xl xl:mx-auto justify-between border-2 border-black mx-4">
         <div className="border-r-2 border-black p-2">
           <h1 className="text-2xl font-bold">maria zamora</h1>
@@ -41,7 +41,7 @@ const NavBar = () => {
             {links.map(({ id, link }) => (
               <li
                 key={id}
-                className="px-4 cursor-pointer capitalize font-bold text-black-800 text-2xl hover:scale-105 duration-200"
+                className="px-4 cursor-pointer capitalize text-2xl hover:scale-105 duration-200"
               >
                 <Link to={link} smooth duration={500}>
                   {link}
@@ -52,7 +52,7 @@ const NavBar = () => {
           </div>
           <div
         onClick={() => setNav(!nav)}
-        className="cursor-pointer p-6 z-10 text-black-500 md:hidden"
+        className="cursor-pointer p-6 z-10 smd:hidden"
       >
         {nav ? <FaTimes size={30} /> : <FaBars size={25} />}
       </div>
