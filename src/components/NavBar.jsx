@@ -29,9 +29,9 @@ const NavBar = () => {
   ];
 
   return (
-    <div className="bg-white">
-      <div className="flex h-20 w-screen mt-4 text-black">
-      <div className="flex flex-inline w-screen justify-between border-2 border-black mx-4">
+    <div>
+      <div className="flex h-20 mt-4 text-black">
+      <div className="flex flex-inline w-screen max-w-7xl xl:mx-auto justify-between border-2 border-black mx-4">
         <div className="border-r-2 border-black p-2">
           <h1 className="text-2xl font-bold">maria zamora</h1>
         </div>
@@ -58,7 +58,7 @@ const NavBar = () => {
       </div>
 
       {nav && (
-        <div className="border-4 border-black absolute top-0 left-0 bg-white w-screen h-screen">
+        <div className="border-4 border-black absolute top-0 left-0 bg-orange-50 w-screen h-screen">
           <ul className="flex flex-col justify-center items-center big-white">
             {links.map(({ id, link }) => (
               

@@ -9,5 +9,6 @@
 @layer base {
   html {
     font-family: 'Bodoni';
+    background-color: #fff7ed;
   }
 }
