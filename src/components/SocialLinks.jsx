@@ -9,39 +9,37 @@ const SocialLinks = () => {
       id: 1,
       child: (
         <>
-          LinkedIn <FaLinkedin size={30} />
+          <FaLinkedin size={30} />
         </>
       ),
-      href: "https://linkedin.com",
-      style: "rounded-tr-md",
+      href: "https://www.linkedin.com/in/maria-z-b21929107/",
     },
     {
       id: 2,
       child: (
         <>
-          GitHub <FaGithub size={30} />
+          <FaGithub size={30} />
         </>
       ),
-      href: "https://github.com/theyashpatel",
+      href: "https://github.com/zamariac",
     },
     {
       id: 3,
       child: (
         <>
-          Mail <HiOutlineMail size={30} />
+          <HiOutlineMail size={30} />
         </>
       ),
-      href: "mailto:foo@gmail.com",
+      href: "mailto:zamora.mariac@gmail.com",
     },
     {
       id: 4,
       child: (
         <>
-          Resume <BsFillPersonLinesFill size={30} />
+          <BsFillPersonLinesFill size={30} />
         </>
       ),
-      href: "/resume.pdf",
-      style: "rounded-br-md",
+      href: "/zamora_m_resume.pdf",
       download: true,
     },
   ];
@@ -53,14 +51,14 @@ const SocialLinks = () => {
           <li
             key={id}
             className={
-              "flex justify-between items-center w-40 h-14 px-4 ml-[-100px] hover:ml-[-10px] hover:rounded-md duration-300 bg-gray-500" +
+              "flex justify-center items-center w-14 h-14 px-4 ml-[-10px] hover:ml-[-5px] duration-300 bg-black" +
               " " +
               style
             }
           >
             <a
               href={href}
-              className="flex justify-between items-center w-full text-white"
+              className="flex justify-center items-center w-full text-orange-50 ml-1"
               download={download}
               target="_blank"
               rel="noreferrer"
