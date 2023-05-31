@@ -10,8 +10,8 @@ const Home = () => {
     >
       <div className="flex px-4">
         <div className="border-2 border-t-0 border-black container md:columns-2 max-w-7xl xl:mx-auto"> 
-                <div>
-                <div className="div.p-4 border-2 border-black">
+                <div className="m-6">
+                <div className="p-4 border-2 border-black">
                   <img
                     src={HeroImage}
                     alt="my profile"
@@ -24,13 +24,13 @@ const Home = () => {
                    
                     <div className="md:border-t-2 border-black">
                     <div className="p-4">
-                      <h1 className="text-6xl md:text-5xl font-bold text-black">
-                        I'm a Full Stack Developer
+                      <h1 className="text-8xl md:text-5xl font-bold text-black">
+                        I'm a <br /> Front End <br/>Developer!
                       </h1>
-                      <p className="text-gray-500 py-4 max-w-md font-montserrat">
-                        I have 8 years of experience building and desgining software.
-                        Currently, I love to work on web application using technologies like
-                        React, Tailwind, Next JS and GraphQL.
+                      <h3 className="max-w-md font-montserrat text-2xl">I have 5 years of experience building web applications.</h3>
+                      <p className="py-4 max-w-md font-montserrat text-md">
+                        I love to working with designers using technologies like
+                        React, Tailwind, and Next JS.
                       </p>
                     </div>
                   </div>
